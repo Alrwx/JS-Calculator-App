@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(196, 241, 247, 0.664);
+}
+
+
+#calculator{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+}
+
+#display{
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: rgb(255, 255, 255)
+
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+    padding: 25px;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: rgba(207, 203, 191, 0.842);
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgba(207, 203, 191, 0.562);
+}
+button:active{
+    background-color: rgb(222, 238, 203);
+}
+.operator-btn{
+    background-color: rgba(255, 0, 0, 0);
+}
+.operator-btn:hover{
+    background-color: rgba(0, 0, 0, 0.253);
+}
+.operator-btn:active{
+    background-color: rgba(175, 175, 175, 0.158);
+}
+.skib-btn{
+    background-color: rgba(231, 148, 148, 0.842);
+}
+.skib-btn:active{
+    background-color: rgb(255, 201, 201);
+}
+.skib-btn:hover{
+    background-color: rgba(247, 169, 169, 0.863);
+}
